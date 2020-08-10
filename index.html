@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    body{
+      background-color: #b7efcd;
+      
+    }
+    .container{
+      width:250px;
+      background-color: #4b5d67;
+      padding: 25px 15px 20px;
+      margin: 0 auto;
+      box-shadow: 1px 2px 2px rgba(0,0,0,0.3);
+      border-radius: 4px;
+      margin-top: 5rem;
+      position: relative;
+    }
+    
+    input{
+      width: 100%;
+      padding: 15px 13px;
+      text-align: right;
+      font-size: 17px;
+      border: none;
+      color: #111;
+      background-color: #fff;
+    }
+    button{
+      width: 52px;
+      height: 40px;
+      margin: 2px 0;
+      font-size: 17px;
+      text-align: center;
+      padding: 2px;
+      background-color: #f1f1f1;
+      border: 1px solid #f1f1f1;
+      color: #333;
+      border-radius: 2px;
+    }
+    hr{
+      margin: 15px 0;
+      color: #faf9f9;
+    }
+    @media(min-width: 753px){
+      .container::after{
+      content: 'Calculator';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to left bottom,#4b5d67,#b0cac7);
+      border-radius: 4px;
+      font-size: 20px;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition:transform 0.2s;
+    }
+    .container:hover::after{
+      transform: rotateX(-180deg) translateX(-250.5px);
+      content: '';
+    }
+    }
+  </style>
+
+
+</head>
+<body>
+  <div class="container">
+    <input type="text" name="" id="screen" disabled>
+    <hr>
+    <button id="sqrt">&radic;</button>
+    <button id="clear">CE</button>
+    <button id="clear">C</button>
+    <button id="del">DEL</button><br>
+    <button id="num">7</button>
+    <button id="num">8</button>
+    <button id="num">9</button>
+    <button id="sign">+</button><br>
+    <button id="num">4</button>
+    <button id="num">5</button>
+    <button id="num">6</button>
+    <button id="sign">-</button><br>
+    <button id="num">1</button>
+    <button id="num">2</button>
+    <button id="num">3</button>
+    <button id="sign">*</button><br>
+    <button id="num">0</button>
+    <button id="sign">.</button>
+    <button id="equal">=</button>
+    <button id="sign">/</button><br>
+   </fo>
+   <script src="project.js"></script>
+</body>
+</html>
+
+
+
